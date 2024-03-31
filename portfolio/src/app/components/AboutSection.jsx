@@ -28,11 +28,13 @@ const TAB_DATA = [
         <li>
           <a
            href="https://www.objectif3d.com/bachelor-gameplay-programming/"
+           target="_blank"
            className={hoverLine}
            >Objectif3D</a></li>
         <li>
           <a 
           href="https://openclassrooms.com/fr/"
+          target="_blank"
           className={hoverLine}
           >OpenClassrooms</a></li>
       </ul>
