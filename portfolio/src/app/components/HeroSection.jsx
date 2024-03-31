@@ -64,7 +64,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-        <div className="bg-[#46454559] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative mt-20">
+        <div className="bg-[#46454559] w-[250px] h-[250px] rounded-full relative mt-20">
           <Image
             src="/images/benji.png"
             alt="hero image"
