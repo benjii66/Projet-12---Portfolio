@@ -9,9 +9,15 @@ const HeroSection = () => {
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+        >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-100">
-              Hello, I&apos;m{" "}
+              Hello, I'm{" "}
             </span>
             <br></br>
            
@@ -35,7 +41,13 @@ const HeroSection = () => {
               </span>
             </Link>
           </div>
-       
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
+        >
         <div className="bg-[#46454559] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative mt-20">
           <Image
             src="/images/benji.png"
@@ -45,6 +57,7 @@ const HeroSection = () => {
             height={300}
           />
         </div>
+        </motion.div>
       </div>
     </section>
   );
