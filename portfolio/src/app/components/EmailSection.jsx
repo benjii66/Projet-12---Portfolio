@@ -17,12 +17,12 @@ const EmailSection = () => {
           I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-            <a href="https://github.com/benjii66" target="_blank" rel="noopener noreferrer">
-              <Image src={GithubIcon} alt="Github Icon" width={24} height={24} />
-            </a>
-            <a href="https://www.linkedin.com/in/benjamiinsimon/" target="_blank" rel="noopener noreferrer">
-              <Image src={LinkedinIcon} alt="Linkedin Icon" width={24} height={24} />
-            </a>
+        <Link target="blank" href="https://github.com/benjii66">
+            <Image src={GithubIcon} alt="Github Icon" />
+          </Link>
+          <Link target="blank" href="https://www.linkedin.com/in/benjamiinsimon/">
+            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
         </div>
       </div>
       <div>
