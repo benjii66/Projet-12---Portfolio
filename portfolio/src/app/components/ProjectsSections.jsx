@@ -3,70 +3,8 @@ import React, {useState, useRef} from 'react'
 import { motion, useInView } from "framer-motion";
 import ProjectTag from './ProjectTag';
 import ProjectCard from './ProjectCard';
+import { projectsData } from './data/Projects';
 
-const projectsData = [
-  {
-    id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    alt: "Project 1",
-    tag: ["All", "School"],
-    gitUrl: "/",
-    previewUrl: "/",
-    tooltipContent: "React, HTML,CSS"
-  },
-  {
-    id: 2,
-    title: "Photography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "School"],
-    gitUrl: "/",
-    previewUrl: "/",
-    tooltipContent: "React, HTML,CSS"
-  },
-  {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "School"],
-    gitUrl: "/",
-    previewUrl: "/",
-    tooltipContent: "React, HTML,CSS"
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Personal"],
-    gitUrl: "/",
-    previewUrl: "/",
-    tooltipContent: "React, HTML,CSS"
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "School"],
-    gitUrl: "/",
-    previewUrl: "/",
-    tooltipContent: "React, HTML,CSS"
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Personal"],
-    gitUrl: "/",
-    previewUrl: "/",
-    tooltipContent: "React, HTML,CSS"
-  },
-];
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");

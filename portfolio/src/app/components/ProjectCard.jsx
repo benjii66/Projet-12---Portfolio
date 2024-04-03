@@ -13,7 +13,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tooltipCo
     >
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+        style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}
       >
         {showTooltip && (
           <div className="tooltip-content absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white py-2 px-4 rounded-md text-xs">
@@ -24,12 +24,14 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tooltipCo
           <Link
             href={gitUrl}
             className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            target="_blank"
           >
             <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
           </Link>
           <Link
             href={previewUrl}
             className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            target="_blank"
           >
             <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
           </Link>

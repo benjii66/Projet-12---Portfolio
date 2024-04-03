@@ -24,6 +24,8 @@ const HeroSection = () => {
               sequence={[
                 "Benjamin,",
                 1000,
+                "French,",
+                1000,
                 "Front-End,",
                 1000,
               ]}
@@ -48,8 +50,10 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="certifications/CV_BenjaminRecent(AvantOC).pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-900 to-blue-300 hover:bg-slate-800 text-white mt-3"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 {/* TODO ADD THE CV IN A LINK  */}
