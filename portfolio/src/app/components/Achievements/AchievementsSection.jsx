@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import useSWR from 'swr';
+import useTranslation from 'next-translate/useTranslation';
 
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), { ssr: false });
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
+const {t} = useTranslation("metrics");
 
 const AchievementsSection = () => {
   const { data, error } = useSWR('/api/stats', fetcher);
@@ -27,25 +29,25 @@ const AchievementsSection = () => {
 
   const achievementsList = [
     {
-      metric: "Repositories",
+      metric: t("repositories"),
       value: data ? data.githubStats.publicReposCount : initialData.publicReposCount,
       postfix: "+",
     },
     {
-      metric: "Commits",
+      metric: t("commits"),
       value: data ? data.githubStats.totalCommits : initialData.totalCommits,
       postfix: "+",
     },
     {
-      metric: "Most Used",
+      metric: t("mostUsed"),
       value: "JS",
     },
     {
-      metric: "Days Streak",
+      metric: t("dayStreak"),
       value: data ? data.bestStreak : initialData.longestStreak,
     },
     {
-      metric: "Years",
+      metric: t("years"),
       value: 2,
     },
   ];
