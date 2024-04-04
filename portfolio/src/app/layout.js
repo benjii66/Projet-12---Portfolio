@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         <meta name="application-name" content="Benjamin Simon - Portfolio"/>
         <meta name="mobile-web-app-capable" content="yes"/>
         <meta name="googlebot" content="index"/>
+        <meta name="google-site-verification" content="4704C3GEL0FlD2HgLYIuHB22FS1BiuSHGj4beQslYI8" />
 
         <title> Benjamin Simon - Portfolio</title>
       </Head>
