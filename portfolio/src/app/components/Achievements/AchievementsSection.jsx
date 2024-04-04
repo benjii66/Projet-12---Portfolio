@@ -66,8 +66,10 @@ const AchievementsSection = () => {
               <div
                 key={index}
                 className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
+                aria-label="Achievement section"
+                itemScope
               >
-                <h2 className="text-white text-4xl font-bold flex flex-row">
+                <h2 className="text-white text-4xl font-bold flex flex-row" itemprop="headline">
                   {achievement.prefix}
                   {isNumericValue ? 
                   (
@@ -90,7 +92,7 @@ const AchievementsSection = () => {
                  
                   {achievement.postfix}
                 </h2>
-                <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+                <p className="text-[#ADB7BE] text-base" itemprop="description">{achievement.metric}</p>
               </div>
             );
           }))}

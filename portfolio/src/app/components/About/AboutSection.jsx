@@ -19,18 +19,20 @@ const AboutSection = () => {
 
   return (
 
-    <section className="text-white" id="about">
+    <section className="text-white" id="about" aria-label='about' itemScope itemProp='about'>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/Desk.jpg" alt="about" width={500} height={500} />
+        <Image src="/images/Desk.jpg" alt="about background" width={500} height={500} aria-label='about background' itemProp='image' />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">{t("about")}</h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg" aria-label='about paragraph' itemScope={true} itemProp='text'>
           {t("aboutParagraph")}
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8" aria-label='buttons' itemScope itemProp='buttons'>
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
+              itemtype="https://schema.org/Skills"
+              itemprop="skills"
             >
               {" "}
               {t("skills")}{" "}
@@ -38,6 +40,8 @@ const AboutSection = () => {
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
+              itemtype="https://schema.org/Education"
+              itemprop="education"
             >
               {" "}
               {t("education")}{" "}
@@ -45,6 +49,8 @@ const AboutSection = () => {
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
+              itemtype="https://schema.org/Certifications"
+              itemprop="certifications"
             >
               {" "}
               Certifications{" "}

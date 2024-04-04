@@ -14,7 +14,7 @@ const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const navLinks = useNavLinks();
   return (
-    <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'> 
+    <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100' aria-label='navigation bar' itemProp='navigation'> 
         <div className='flex container lg:py-2 flex-wrap items-center justify-center mx-auto px-4 py-2'>
             <Link href={"/"}>
                 <Image 
@@ -23,22 +23,24 @@ const Navbar = () => {
                     className='transform -translate-x-1/2 -translate-y-1/4 left-1/2 lg:translate-x-0 lg:w-20 lg:h-20'
                     width={75}
                     height={75}
+                    aria-label='logo'
+                    itemProp='logo'
                 />
             </Link>
-            <div className='mobile-menu block md:hidden'>
+            <div className='mobile-menu block md:hidden' aria-label='mobile menu'>
                 {!navbarOpen ? (
                    <button
                     onClick={() => setNavbarOpen(true)}
                     className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
                    >
-                    <Bars3Icon className="h-5 w-5"/>
+                    <Bars3Icon className="h-5 w-5" aria-label='3 bars icon' itemProp='icon'/>
                    </button>
                 ): (
                     <button
                         onClick={() => setNavbarOpen(close)}
                         className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
                     >
-                        <XMarkIcon className="h-5 w-5"/>
+                        <XMarkIcon className="h-5 w-5" aria-label='close' itemProp="close"/>
                     </button>
                 )}
             </div>

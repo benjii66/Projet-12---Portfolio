@@ -36,16 +36,17 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12" aria-label="Projects" itemProp="projects">
+        {t("projects")}
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6" aria-label="tags" itemProp="tags">
       <ProjectTag
         onClick={() => handleTagChange("All")}
         name={t("projectTag1")}
         isSelected={tag === "All"}
         selectedColor={"text-white border-blue-400"}
         unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
+        aria-label="All"
       />
       <ProjectTag
         onClick={() => handleTagChange("School")}
@@ -53,6 +54,7 @@ const ProjectsSection = () => {
         isSelected={tag === "School"}
         selectedColor={"text-white border-blue-400"}
         unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
+        aria-label="School"
       />
       <ProjectTag
         onClick={() => handleTagChange("Personal")}
@@ -60,10 +62,11 @@ const ProjectsSection = () => {
         isSelected={tag === "Personal"}
         selectedColor={"text-white border-blue-400"}
         unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
+        aria-label="Personal"
       />
       </div>
 
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12" aria-label="card" itemProp="card">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
