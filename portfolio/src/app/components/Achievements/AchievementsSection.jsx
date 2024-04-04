@@ -2,15 +2,16 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import useSWR from 'swr';
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from "next-translate/useTranslation";
+
 
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), { ssr: false });
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
-const {t} = useTranslation("metrics");
 
 const AchievementsSection = () => {
   const { data, error } = useSWR('/api/stats', fetcher);
+  const {t} = useTranslation("metrics");
 
   const [isLoading, setIsLoading] = useState(true);
 
