@@ -2,7 +2,7 @@
 import React, { useTransition, useState } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton';
-import useTabData from '../Data/TabData';
+import useTabData from '../data/TabData';
 import useTranslation from "next-translate/useTranslation";
 
 const AboutSection = () => {

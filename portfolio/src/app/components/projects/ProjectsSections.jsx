@@ -3,7 +3,7 @@ import React, {useState, useRef} from 'react'
 import { motion, useInView } from "framer-motion";
 import ProjectTag from './ProjectTag';
 import ProjectCard from './ProjectCard';
-import useProjectsData from '../Data/Projects';
+import useProjectsData from '../data/Projects';
 import useTranslation from "next-translate/useTranslation";
 
 
