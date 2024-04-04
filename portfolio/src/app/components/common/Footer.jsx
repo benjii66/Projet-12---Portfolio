@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 const Footer = () => {
+  const { t } = useTranslation("contact");
   return (
     <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
       <div className="container p-12 flex justify-between">
@@ -12,7 +14,7 @@ const Footer = () => {
             width={75}
             height={75}
           />
-        <p className="text-slate-600">All rights reserved.</p>
+        <p className="text-slate-600">{t("copyright")}</p>
       </div>
     </footer>
   );

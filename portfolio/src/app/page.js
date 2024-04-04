@@ -1,10 +1,11 @@
-import AboutSection from "./components/AboutSection";
-import AchievementsSection from "./components/AchievementsSection";
-import EmailSection from "./components/EmailSection";
-import Footer from "./components/Footer";
+import AboutSection from "./components/About/AboutSection";
+import AchievementsSection from "./components/Achievements/AchievementsSection";
+import EmailSection from "./components/Contact/EmailSection";
 import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import ProjectsSections from "./components/ProjectsSections";
+import Footer from "./components/common/Footer";
+import Navbar from "./components/navigation/Navbar";
+import ProjectsSections from "./components/projects/ProjectsSections";
+
 
 
 

@@ -1,0 +1,8 @@
+{
+    "about": "A-propos",
+    "aboutParagraph" : "Je suis un développeur Web junior passionné par la création d'applications Web interactives et réactives. Mon parcours dans le développement Web a commencé avec une formation en programmation de gameplay issue de mon passage dans une école de développement de jeux, où j'ai acquis des compétences en C# et C++. Dans mon rôle actuel, j'ai perfectionné mes compétences en JavaScript, React, Node.js, MySQL, Next.js, HTML et CSS. Je suis particulièrement enthousiaste à l'idée d'explorer de nouvelles technologies et de nouveaux frameworks, et je me suis récemment plongé dans React et Redux. Ma curiosité et mon désir d'apprendre m'ont poussé à élargir continuellement mes connaissances et mes compétences. En dehors du codage, je suis un passionné d'escalade, trouvant de la joie dans l'aspect défi et résolution de problèmes du sport. Je suis enthousiasmé par la perspective de rejoindre un apprentissage chez React à l'avenir. En tant qu'esprit d'équipe, je m'épanouis dans des environnements collaboratifs et je suis impatient de mettre mes compétences et ma créativité au service de la création d'applications étonnantes aux côtés de professionnels partageant les mêmes idées.",
+    "projects": "Projets",
+    "contact": "Contact",
+    "skills": "Compétences",
+    "education":"Scolarité"
+}

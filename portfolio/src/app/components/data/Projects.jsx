@@ -1,8 +1,13 @@
-export const projectsData = [
+import useTranslation from "next-translate/useTranslation";
+
+const useProjectsData = () => {
+ const { t } = useTranslation("project");
+ 
+ const projectsData = [
     {
         id: 1,
-        title: "Optimize a photograph website",
-        description: "Optimize the SEO of an existing website, with minifying, lazy loading, and image optimization and of course the referencing labels.",
+        title: t("project1Title"),
+        description: t("project1Description"),
         image: "/images/projects/P9-Nina.png",
         alt: "Nina's website",
         tag: ["All", "School"],
@@ -12,8 +17,8 @@ export const projectsData = [
       },
       {
         id: 2,
-        title: "Renting Application",
-        description: "Simple renting application front-end only, it was an introduction to React",
+        title: t("project2Title"),
+        description: t("project2Description"),
         image: "/images/projects/Kasa-logo.png",
         tag: ["All", "School"],
         gitUrl: "https://github.com/benjii66/Kasa",
@@ -22,8 +27,8 @@ export const projectsData = [
       },
       {
         id: 3,
-        title: "A group of restaurants app",
-        description: "A mobile first restaurants app, with a focus on animations and transitions, first steps into SASS.",
+        title: t("project3Title"),
+        description: t("project3Description"),
         image: "/images/projects/Oh-My-Food.png",
         tag: ["All", "School"],
         gitUrl: "https://github.com/benjii66/Projet4-OhMyFood",
@@ -32,8 +37,8 @@ export const projectsData = [
       },
       {
         id: 4,
-        title: "Dynamise a website with JS",
-        description: "Introduction to JS, with a simple website to dynamise with a carousel.",
+        title: t("project4Title"),
+        description: t("project4Description"),
         image: "/images/projects/Print-It.png",
         tag: ["All", "School"],
         gitUrl: "https://github.com/benjii66/Projet-5-Print-It-JS",
@@ -42,8 +47,8 @@ export const projectsData = [
       },
       {
         id: 5,
-        title: "React Firebase Template",
-        description: "Authentication and CRUD operations",
+        title: t("project5Title"),
+        description: t("project5Description"),
         image: "/images/projects/5.png",
         tag: ["All", "School"],
         gitUrl: "/",
@@ -52,8 +57,8 @@ export const projectsData = [
       },
       {
         id: 6,
-        title: "Full-stack Roadmap",
-        description: "Project 5 description",
+        title: t("project6Title"),
+        description: t("project6Description"),
         image: "/images/projects/6.png",
         tag: ["All", "Personal"],
         gitUrl: "/",
@@ -61,3 +66,6 @@ export const projectsData = [
         tooltipContent: "React, HTML,CSS"
       },
     ];
+    return projectsData;
+};
+export default useProjectsData;

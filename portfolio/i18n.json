@@ -1,0 +1,7 @@
+{
+    "locales": ["en-US", "fr"],
+    "defaultLocale": "fr",
+    "pages": {
+      "*": ["contact", "hero", "about", "certification", "project"]
+    }
+}  

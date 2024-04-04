@@ -3,13 +3,17 @@ import React, {useState, useRef} from 'react'
 import { motion, useInView } from "framer-motion";
 import ProjectTag from './ProjectTag';
 import ProjectCard from './ProjectCard';
-import { projectsData } from './data/Projects';
+import useProjectsData from '../Data/Projects';
+import useTranslation from "next-translate/useTranslation";
+
 
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const [subTag, setSubTag] = useState(null);
-
+  const projectsData = useProjectsData();
+  const { t } = useTranslation("project");
+  
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -36,28 +40,27 @@ const ProjectsSection = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-          selectedColor={"text-white border-blue-400"}
-          unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="School"
-          isSelected={tag === "School"}
-          selectedColor={"text-white border-blue-400"}
-          unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Personal"
-          isSelected={tag === "Personal"}
-          selectedColor={"text-white border-blue-400"}
-          unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
-        />
-        
+      <ProjectTag
+        onClick={() => handleTagChange("All")}
+        name={t("projectTag1")}
+        isSelected={tag === "All"}
+        selectedColor={"text-white border-blue-400"}
+        unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
+      />
+      <ProjectTag
+        onClick={() => handleTagChange("School")}
+        name={t("projectTag2")}
+        isSelected={tag === "School"}
+        selectedColor={"text-white border-blue-400"}
+        unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
+      />
+      <ProjectTag
+        onClick={() => handleTagChange("Personal")}
+        name={t("projectTag3")}
+        isSelected={tag === "Personal"}
+        selectedColor={"text-white border-blue-400"}
+        unSelectedColor={"text-[#ADB7BE] border-slate-600 hover:border-white"}
+      />
       </div>
 
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

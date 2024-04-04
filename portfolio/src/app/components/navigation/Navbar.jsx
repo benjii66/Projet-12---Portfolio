@@ -5,26 +5,14 @@ import { Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay';
 import NavLink from './NavLink';
 import Image from "next/image";
+import useNavLinks from '../data/NavLinks';
 
 
-const navLinks = [
 
- {
-    title: "About",
-    path: "#about"
- },
- {
-    title: "Projects",
-    path: "#projects"
- },
- {
-    title: "Contact",
-    path: "#contact"
- },
-]
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    const navLinks = useNavLinks();
   return (
     <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'> 
         <div className='flex container lg:py-2 flex-wrap items-center justify-center mx-auto px-4 py-2'>

@@ -1,0 +1,13 @@
+{
+    "letsconnect": "Contactons-nous",
+    "connectParagraph" : "Je suis actuellement à la recherche de nouvelles opportunités, mes boîtes de réception sont toujours ouvertes. Que vous ayez une question ou que vous souhaitiez simplement dire bonjour, je ferai de mon mieux pour vous répondre !",
+    "emailLabel": "Votre email",
+    "subjectLabel": "Sujet",
+    "subjectPlaceholder": "Bonjour bonjour !",
+    "messageLabel": "Message",
+    "messagePlaceholder" : "Il était une fois...",
+    "sendMessage": "Envoyer le message",
+    "emailSuccess": "Email envoyé avec succès",
+    "copyright" : "© 2024 par Benjamin Simon. Tous droits réservés."
+
+}

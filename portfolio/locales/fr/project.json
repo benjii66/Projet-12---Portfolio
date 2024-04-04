@@ -1,0 +1,17 @@
+{
+    "project1Title" : "Optimiser le site d'une photographe",
+    "project1Description": "Optimiser le SEO d'un site déjà existant, en utilisant la minification, le chargement paresseux, l'optimisation d'images et du référencement.",
+    "project2Title" : "Application immobilière",
+    "project2Description": "Simple application immobilière avec que front-end, c'était une introduction à React.JS.",
+    "project3Title" : "Application d'un groupe de restaurants",
+    "project3Description": "Une application mobile first d'un groupe de restaurants, avec des détails sur les animations et les transitions, introduction au SASS.",
+    "project4Title" : "Dynamiser un site web avec JavaScript",
+    "project4Description": "Introduction à JavaScript, un simple site à dynamiser avec un caroussel.",
+    "project5Title" : "React Firebase Template",
+    "project5Description" : "Authentication and CRUD operations",
+    "project6Title" : "Full-stack Roadmap",
+    "project6Description" : "Project 6 description",
+    "projectTag1": "Tous",
+    "projectTag2": "Formation",
+    "projectTag3": "Personnel"
+}

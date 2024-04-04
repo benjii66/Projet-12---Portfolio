@@ -25,7 +25,6 @@ const AchievementsSection = () => {
     longestStreak: 0,
   };
 
-  // Liste des réalisations pour l'animation
   const achievementsList = [
     {
       metric: "Repositories",
