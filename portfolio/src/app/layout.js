@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
         <meta name="mobile-web-app-capable" content="yes"/>
 
         <meta name="googlebot" content="noindex"/>
+        <meta name="googlebot" content="notranslate"/>
         <meta name="googlebot-news" content="noindex"/>
         <meta name="google-site-verification" content="4704C3GEL0FlD2HgLYIuHB22FS1BiuSHGj4beQslYI8" />
 
