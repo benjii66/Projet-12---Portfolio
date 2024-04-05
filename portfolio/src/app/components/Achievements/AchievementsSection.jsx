@@ -11,7 +11,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const AchievementsSection = () => {
   const { data, error } = useSWR('/api/stats', fetcher);
-  const {t} = useTranslation("metrics");
+  const { t } = useTranslation("metrics");
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -24,7 +24,7 @@ const AchievementsSection = () => {
   const initialData = {
     publicReposCount: 0,
     totalCommits: 0,
-    mostUsedLanguage: "", 
+    mostUsedLanguage: "",
     longestStreak: 0,
   };
 
@@ -62,7 +62,7 @@ const AchievementsSection = () => {
           achievementsList.map((achievement, index) => {
             const isNumericValue = !isNaN(achievement.value);
             return (
-              
+
               <div
                 key={index}
                 className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
@@ -71,25 +71,25 @@ const AchievementsSection = () => {
               >
                 <h2 className="text-white text-4xl font-bold flex flex-row" itemprop="headline">
                   {achievement.prefix}
-                  {isNumericValue ? 
-                  (
-                    <AnimatedNumbers
-                    key={`animated-${achievement.metric}-${achievement.value}`}
-                    includeComma
-                    animateToNumber={parseInt(achievement.value, 10)}
-                    locale="fr-FR"
-                    className="text-white text-4xl font-bold"
-                    configs={(_, index) => ({
-                      mass: 1,
-                      friction: 100,
-                      tension: 140 * (index + 1),
-                    })}
-                    />
-                  ) :
-                 (
-                    <span className="text-white text-4xl font-bold">{achievement.value}</span>
-                  )}
-                 
+                  {isNumericValue ?
+                    (
+                      <AnimatedNumbers
+                        key={`animated-${achievement.metric}-${achievement.value}`}
+                        includeComma
+                        animateToNumber={parseInt(achievement.value, 10)}
+                        locale="fr-FR"
+                        className="text-white text-4xl font-bold"
+                        configs={(_, index) => ({
+                          mass: 1,
+                          friction: 100,
+                          tension: 140 * (index + 1),
+                        })}
+                      />
+                    ) :
+                    (
+                      <span className="text-white text-4xl font-bold">{achievement.value}</span>
+                    )}
+
                   {achievement.postfix}
                 </h2>
                 <p className="text-[#ADB7BE] text-base" itemprop="description">{achievement.metric}</p>

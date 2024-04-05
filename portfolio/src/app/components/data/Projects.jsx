@@ -35,36 +35,39 @@ const useProjectsData = () => {
         previewUrl: "https://benjii66.github.io/Projet4-OhMyFood/index.html",
         tooltipContent: "HTML,SASS"
       },
-      {
-        id: 4,
-        title: t("project4Title"),
-        description: t("project4Description"),
-        image: "/images/projects/Print-It.png",
-        tag: ["All", "School"],
-        gitUrl: "https://github.com/benjii66/Projet-5-Print-It-JS",
-        previewUrl: "https://benjii66.github.io/Projet-5-Print-It-JS/",
-        tooltipContent: "JS, HTML,CSS"
-      },
-      {
-        id: 5,
-        title: t("project5Title"),
-        description: t("project5Description"),
-        image: "/images/projects/5.png",
-        tag: ["All", "School"],
-        gitUrl: "/",
-        previewUrl: "/",
-        tooltipContent: "React, HTML,CSS"
-      },
-      {
-        id: 6,
-        title: t("project6Title"),
-        description: t("project6Description"),
-        image: "/images/projects/6.png",
-        tag: ["All", "Personal"],
-        gitUrl: "/",
-        previewUrl: "/",
-        tooltipContent: "React, HTML,CSS"
-      },
+
+//todo add 3 personal projects
+
+      // {
+      //   id: 4,
+      //   title: t("project4Title"),
+      //   description: t("project4Description"),
+      //   image: "/images/projects/Print-It.png",
+      //   tag: ["All", "School"],
+      //   gitUrl: "https://github.com/benjii66/Projet-5-Print-It-JS",
+      //   previewUrl: "https://benjii66.github.io/Projet-5-Print-It-JS/",
+      //   tooltipContent: "JS, HTML,CSS"
+      // },
+      // {
+      //   id: 5,
+      //   title: t("project5Title"),
+      //   description: t("project5Description"),
+      //   image: "/images/projects/5.png",
+      //   tag: ["All", "School"],
+      //   gitUrl: "/",
+      //   previewUrl: "/",
+      //   tooltipContent: "React, HTML,CSS"
+      // },
+      // {
+      //   id: 6,
+      //   title: t("project6Title"),
+      //   description: t("project6Description"),
+      //   image: "/images/projects/6.png",
+      //   tag: ["All", "Personal"],
+      //   gitUrl: "/",
+      //   previewUrl: "/",
+      //   tooltipContent: "React, HTML,CSS"
+      // },
     ];
     return projectsData;
 };

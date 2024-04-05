@@ -25,7 +25,7 @@ const MetaComponent = () => {
   return (
     <Head>
       	<meta data-react-helmet="true" name="robots" content="index"/>
-        <link rel="icon" href="/images/Logo-B-NoCircle-BG-Removed.png" type="image/x-icon"/>
+        <link rel="icon" href="../../images/Logo-B-NoCircle-BG-Removed" type="image/x-icon"/>
         <meta charset="UTF-8"/>
         <meta name="author" content="Benjamin Simon"/>
         <meta name="description" content={t("description")}/>
