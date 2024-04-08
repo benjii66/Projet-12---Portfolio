@@ -6,15 +6,15 @@ const useNavLinks = () => {
    const navLinks = [
      {
        title: t("about"),
-       path: "#about"
+       path: "/#about"
      },
      {
        title: t("projects"),
-       path: "#projects"
+       path: "/#projects"
      },
      {
        title: t("contact"),
-       path: "#contact"
+       path: "/#contact"
      },
    ];
  
