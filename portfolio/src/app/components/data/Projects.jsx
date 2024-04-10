@@ -13,7 +13,7 @@ const useProjectsData = () => {
         tag: ["All", "School"],
         gitUrl: "https://github.com/benjii66/P9-Nina",
         previewUrl: "https://benjii66.github.io/P9-Nina/",
-        tooltipContent: "JS,HTML,CSS"
+        technologies: ["/images/technologies/js.webp", "/images/technologies/html.webp", "/images/technologies/css.png"],
       },
       {
         id: 2,
@@ -23,7 +23,7 @@ const useProjectsData = () => {
         tag: ["All", "School"],
         gitUrl: "https://github.com/benjii66/Kasa",
         previewUrl: "https://kasa-silk.vercel.app/",
-        tooltipContent: "React,HTML,CSS"
+        technologies: ["/images/technologies/react.webp", "/images/technologies/html.webp","/images/technologies/css.webp"]
       },
       {
         id: 3,
@@ -33,7 +33,7 @@ const useProjectsData = () => {
         tag: ["All", "School"],
         gitUrl: "https://github.com/benjii66/Projet4-OhMyFood",
         previewUrl: "https://benjii66.github.io/Projet4-OhMyFood/index.html",
-        tooltipContent: "HTML,SASS"
+        technologies:[ "/images/technologies/html.webp","/images/technologies/sass.webp"]
       },
 
 //todo add 3 personal projects

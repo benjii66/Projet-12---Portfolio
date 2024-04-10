@@ -81,7 +81,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
-              tooltipContent={project.tooltipContent}
+              technologies={project.technologies}
             />
           </motion.li>
         ))}

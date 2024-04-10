@@ -32,7 +32,7 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
               itemtype="https://schema.org/Skills"
-              itemprop="skills"
+              itemProp="skills"
             >
               {" "}
               {t("skills")}{" "}
@@ -41,7 +41,7 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
               itemtype="https://schema.org/Education"
-              itemprop="education"
+              itemProp="education"
             >
               {" "}
               {t("education")}{" "}
@@ -50,7 +50,7 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
               itemtype="https://schema.org/Certifications"
-              itemprop="certifications"
+              itemProp="certifications"
             >
               {" "}
               Certifications{" "}

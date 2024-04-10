@@ -1,28 +1,26 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tooltipContent }) => {
-  const[showTooltip, setShowTooltip] = useState(false);
+
+
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologies }) => {
+  const [showTooltip, setShowTooltip] = useState(false);
 
   return (
     <div
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
-      className="relative"    
+      className="relative"
     >
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}
+        style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}
         aria-label="background image"
         itemScope
         itemProp="image"
       >
-        {showTooltip && (
-          <div className="tooltip-content absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white py-2 px-4 rounded-md text-xs" aria-label="tooltip" itemProp="tooltip">
-            {tooltipContent} 
-          </div>
-          )}
+        
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
           <Link
             href={gitUrl}
@@ -31,7 +29,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tooltipCo
             aria-label="github link"
             itemProp="url"
           >
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" aria-label="code" itemProp="code"/>
+            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" aria-label="code" itemProp="code" />
           </Link>
           <Link
             href={previewUrl}
@@ -40,12 +38,17 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tooltipCo
             aria-label="website link"
             itemProp="url"
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" aria-label="eye" itemProp="eye"/>
+            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" aria-label="eye" itemProp="eye" />
           </Link>
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2" aria-label="title" itemScope itemProp="title">{title}</h5>
+        <h5 className="text-xl font-semibold mb-4 flex flex-row items-center justify-center" aria-label="title" itemScope itemProp="title">{title}</h5>
+        <div className="justify-center flex items-center mb-4 tracking-wide z-10">
+           {technologies.map((tech, index) => (
+            <img key={index} src={tech} alt={`${tech} Logo`} className="h-10 w-10 mr-2 hover:motion-reduce:animate-bounce" />
+          ))} 
+        </div>
         <p className="text-[#ADB7BE]" aria-label="description" itemProp="description">{description}</p>
       </div>
     </div>
