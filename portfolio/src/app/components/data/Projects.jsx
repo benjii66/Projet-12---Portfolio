@@ -23,7 +23,7 @@ const useProjectsData = () => {
         tag: ["All", "School"],
         gitUrl: "https://github.com/benjii66/Kasa",
         previewUrl: "https://kasa-silk.vercel.app/",
-        technologies: ["/images/technologies/react.webp", "/images/technologies/html.webp","/images/technologies/css.webp"]
+        technologies: ["/images/technologies/React.webp", "/images/technologies/html.webp","/images/technologies/css.webp"]
       },
       {
         id: 3,

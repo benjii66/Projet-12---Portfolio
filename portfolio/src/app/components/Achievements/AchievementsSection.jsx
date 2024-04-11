@@ -33,7 +33,7 @@ const AchievementsSection = () => {
       <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between h-full w-full">
         {isLoading ? (
           <div className="flex-grow flex justify-center items-center">
-            <div className="animate-spin rounded-full h-24 w-24 border-b-2 border-blue-600"></div>
+            <div className="mt-4 animate-spin rounded-full h-24 w-24 border-b-2 border-blue-600"></div>
           </div>
         ) : (
           <>

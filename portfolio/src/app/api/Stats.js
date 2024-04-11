@@ -4,9 +4,11 @@ import { BestStreak } from "./GraphMetrics";
 
 export async function handler(req, res) {
   try {
-    const githubStats = await getGitHubStats("benjii66");
-    const bestStreak = await BestStreak("benjii66");
-    
+    const [githubStats, bestStreak] = await Promise.all([
+      getGitHubStats("benjii66"),
+      BestStreak("benjii66"),
+    ]);
+
     res.status(200).json({
       githubStats,
       bestStreak

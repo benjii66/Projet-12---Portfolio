@@ -13,7 +13,6 @@ const nextConfig = nextTranslate({
   i18n: {
     locales: ['en-US', 'fr'],
     defaultLocale: 'en-US',
-    localeDetection: false, 
   },
 });
 
