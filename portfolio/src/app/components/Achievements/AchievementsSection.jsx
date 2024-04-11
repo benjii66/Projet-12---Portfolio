@@ -41,8 +41,8 @@ const AchievementsSection = () => {
               { metric: t("repositories"), value: data?.githubStats?.publicReposCount ?? initialData.publicReposCount, postfix: "+" },
               { metric: t("commits"), value: data?.githubStats?.totalCommits ?? initialData.totalCommits, postfix: "+" },
               { metric: t("mostUsed"), value: initialData.mostUsedLanguage },
-              { metric: t("dayStreak"), value: data?.bestStreak ?? initialData.longestStreak },
-              { metric: t("years"), value: initialData.years },
+              { metric: t("dayStreak"), value: data?.bestStreak ?? initialData.longestStreak, postfix: "+" },
+              { metric: t("years"), value: initialData.years, postfix: "+" },
             ].map((achievement, index) => (
               <div
                 key={index}
@@ -64,8 +64,9 @@ const AchievementsSection = () => {
                       })}
                     />
                   ) : (
-                    <span className="text-white text-4xl font-bold">{achievement.value}</span>
+                    <span className="text-white text-4xl font-bold">{achievement.value} </span>
                   )}
+                  {achievement.postfix}
                 </h2>
                 <p className="text-[#ADB7BE] text-base" itemProp="description">{achievement.metric}</p>
               </div>
