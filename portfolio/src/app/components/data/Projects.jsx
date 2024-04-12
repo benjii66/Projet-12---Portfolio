@@ -13,7 +13,7 @@ const useProjectsData = () => {
       tag: ["All", "School"],
       gitUrl: "https://github.com/benjii66/P9-Nina",
       previewUrl: "https://benjii66.github.io/P9-Nina/",
-      technologies: ["/images/technologies/js.webp", "/images/technologies/html.webp", "/images/technologies/css.png"],
+      technologies: [{src: "/images/technologies/js.webp", name:"JavaScript"}, {src:"/images/technologies/html.webp", name:"HTML"}, {src:"/images/technologies/css.webp" ,name:"CSS"}],
     },
     {
       id: 2,
@@ -23,7 +23,8 @@ const useProjectsData = () => {
       tag: ["All", "School"],
       gitUrl: "https://github.com/benjii66/Kasa",
       previewUrl: "https://kasa-silk.vercel.app/",
-      technologies: ["/images/technologies/React.webp", "/images/technologies/html.webp", "/images/technologies/css.webp"]
+      technologies: [{src: "/images/technologies/React.webp", name:"React"}, {src:"/images/technologies/html.webp", name:"HTML"}, {src:"/images/technologies/css.webp" ,name:"CSS"}],
+
     },
     {
       id: 3,
@@ -33,7 +34,7 @@ const useProjectsData = () => {
       tag: ["All", "School"],
       gitUrl: "https://github.com/benjii66/Projet4-OhMyFood",
       previewUrl: "https://benjii66.github.io/Projet4-OhMyFood/index.html",
-      technologies: ["/images/technologies/html.webp", "/images/technologies/sass.webp"]
+      technologies: [{src:"/images/technologies/html.webp", name:"HTML"}, {src:"/images/technologies/sass.webp" ,name:"SASS"}],
     },
   ];
   return projectsData;

@@ -4,11 +4,12 @@ import Link from "next/link";
 
 
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologies }) => {
-
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologies, tooltip }) => {
+  const [tooltipContent, setTooltipContent] = useState(false);
 
   return (
     <>
+
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}
@@ -42,7 +43,22 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
         <h5 className="text-xl font-semibold mb-4 flex flex-row items-center justify-center" aria-label="title" itemScope itemProp="title">{title}</h5>
         <div className="justify-center flex items-center mb-4 tracking-wide z-10">
           {technologies.map((tech, index) => (
-            <img key={index} src={tech} alt={`${tech} Logo`} className="h-10 w-10 mr-2 hover:motion-reduce:animate-bounce" />
+            <div key={index} className="relative w-10 h-10 mr-2 flex items-center justify-center">
+              <img
+                src={tech.src}
+                alt={`${tech.name} Logo`}
+                className="h-10 w-10"
+                onMouseEnter={() => setTooltipContent(tech.name)}
+                onMouseLeave={() => setTooltipContent("")}
+              />
+              {tooltipContent === tech.name && (
+                  <div className="absolute -top-14 px-3 py-2.5 border-2 font-bold uppercase text-indigo-500 bg-white rounded-xl tracking-wide z-10">
+                  <p className="animate-bounce" aria-label="technologies">
+                    {tooltipContent}
+                  </p>
+                </div>
+              )}
+            </div>
           ))}
         </div>
         <p className="text-[#ADB7BE]" aria-label="description" itemProp="description">{description}</p>
