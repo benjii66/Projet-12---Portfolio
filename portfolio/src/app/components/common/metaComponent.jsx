@@ -25,7 +25,7 @@ const MetaComponent = () => {
   return (
     <Head>
       	<meta data-react-helmet="true" name="robots" content="index"/>
-        <link rel="icon" href="../../images/Logo-B-NoCircle-BG-Removed" type="image/x-icon"/>
+        <link rel="icon" type="image/x-icon" href="../../images/Logo-B-NoCircle-BG-Removed" />
         <meta charset="UTF-8"/>
         <meta name="author" content="Benjamin Simon"/>
         <meta name="description" content={t("description")}/>
@@ -37,7 +37,6 @@ const MetaComponent = () => {
         <meta property="og:title" content="Benjamin Simon - Portfolio"/>
         <meta property="og:description" content={t("description")}/>
         <meta property="og:image" content="/images/Logo-B-NoCircle-BG-Removed.png"/>
-        <meta property="og:image" content="/images/benji.png"/>
         <meta property="og:url" content="https://benjamin-simon.vercel.app"/>
         <meta property="og:type" content="website"/>
         <meta property="og:site_name" content="Benjamin Simon - Portfolio"/>
@@ -59,7 +58,6 @@ const MetaComponent = () => {
         <meta name="twitter:title" content="Benjamin Simon - Portfolio"/>
         <meta name="twitter:description" content={t("description")}/>
         <meta name="twitter:image" content="/images/Logo-B-NoCircle-BG-Removed.png"/>
-        <meta name="twitter:image" content="/images/benji.png"/>
         <meta name="twitter:url" content="https://benjamin-simon.vercel.app"/>
 
 
