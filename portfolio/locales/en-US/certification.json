@@ -1,5 +1,11 @@
 {
-    "certification1Title" : "Get started with Git and GitHub",
-    "certification2Title" : "Use REST APIs for your web services",
-    "certification3Title" : "Create dynamic web pages with JavaScript"  
+    "certification1Title" : "Create dynamic web pages with JavaScript",  
+    "certification2Title" : "Start with React",  
+    "certification3Title" : "Manage your React application with Redux and Redux Toolkit",  
+    "certification4Title" : "Implement a database in SQL",  
+    "certification5Title" : "Secure your web applications with OWASP",  
+    "certification6Title" : "Get started with Git and GitHub",
+    "certification7Title" : "Use REST APIs for your web services",
+    "certification8Title" : "Adopt REST API for your web projects"
+
 }

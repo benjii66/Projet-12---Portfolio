@@ -15,10 +15,10 @@ const TabData = [
       id: "skills",
       content: (
         <ul className="list-disc pl-2">
-          <li>MySQL</li>
-          <li>JavaScript</li>
           <li>React.JS</li>
           <li>Next.JS</li>
+          <li>Git & Github</li>
+          <li>API Swagger, Postman</li>
         </ul>
       ),
     },

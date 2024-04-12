@@ -1,6 +1,14 @@
 {
-    "certification1Title" : "Gérez votre code avec Git et GitHub",
-    "certification2Title" : "Utilisez des API REST dans vos projets web",
-    "certification3Title" : "Créez des des pages web dynamiques avec JavaScript"
- 
+    "certification1Title" : "Créez des des pages web dynamiques avec JavaScript",
+    "certification2Title" : "Apprenez à programmer avec JavaScript",
+    "certification3Title" : "Débutez avec React",
+    "certification4Title" : "Gérez votre application React avec Redux et ReduxToolkit",
+    "certification5Title" : "Implémentez vos bases de données relationnelles avec SQL",
+    "certification6Title" : "Simplifiez vous le CSS avec Sass",
+    "certification7Title" : "Sécurisez vos applications web avec l'OWASP",
+    "certification8Title" : "Mettez en place un système de veille informationnelle",
+    "certification9Title" : "Appliquez les principes du Green IT dans votre organisation",
+    "certification10Title" : "Gérez votre code avec Git et GitHub",
+    "certification11Title" : "Utilisez des API REST dans vos projets web",
+    "certification12Title" : "Adoptez les API REST pour vos projets web" 
 }
