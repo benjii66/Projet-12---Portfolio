@@ -5,14 +5,10 @@ import Link from "next/link";
 
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologies }) => {
-  const [showTooltip, setShowTooltip] = useState(false);
+
 
   return (
-    <div
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
-      className="relative"
-    >
+    <>
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}
@@ -20,7 +16,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
         itemScope
         itemProp="image"
       >
-        
+
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
           <Link
             href={gitUrl}
@@ -45,13 +41,13 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
         <h5 className="text-xl font-semibold mb-4 flex flex-row items-center justify-center" aria-label="title" itemScope itemProp="title">{title}</h5>
         <div className="justify-center flex items-center mb-4 tracking-wide z-10">
-           {technologies.map((tech, index) => (
+          {technologies.map((tech, index) => (
             <img key={index} src={tech} alt={`${tech} Logo`} className="h-10 w-10 mr-2 hover:motion-reduce:animate-bounce" />
-          ))} 
+          ))}
         </div>
         <p className="text-[#ADB7BE]" aria-label="description" itemProp="description">{description}</p>
       </div>
-    </div>
+    </>
   );
 };
 
