@@ -36,6 +36,16 @@ const useProjectsData = () => {
       previewUrl: "https://benjii66.github.io/Projet4-OhMyFood/index.html",
       technologies: [{src:"/images/technologies/html.webp", name:"HTML"}, {src:"/images/technologies/sass.webp" ,name:"SASS"}],
     },
+    {
+      id: 4,
+      title: t("project4Title"),
+      description: t("project4Description"),
+      image: "/images/projects/BenjoLingo.png",
+      tag: ["All", "Personal"],
+      gitUrl: "https://github.com/benjii66/lingo",
+      previewUrl: "https://benjolingo.vercel.app",
+      technologies: [{src:"/images/technologies/Next.webp", name:"Next"}, {src:"/images/technologies/drizzle.webp" ,name:"Drizzle"}, {src:"/images/technologies/Typescript.webp" ,name:"Typescript"}],
+    },
   ];
   return projectsData;
 };
