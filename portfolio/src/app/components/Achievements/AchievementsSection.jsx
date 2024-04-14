@@ -57,7 +57,7 @@ const AchievementsSection = () => {
                       includeComma
                       locale="fr-FR"
                       className="text-white text-4xl font-bold"
-                      configs={(number, index) => ({
+                      configs={(index) => ({
                         mass: 1,
                         tension: 130 * (index + 1),
                         friction: 40,
