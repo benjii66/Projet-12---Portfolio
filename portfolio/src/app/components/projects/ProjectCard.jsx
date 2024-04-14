@@ -4,7 +4,7 @@ import Link from "next/link";
 
 
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologies, tooltip }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologies }) => {
   const [tooltipContent, setTooltipContent] = useState(false);
 
   return (

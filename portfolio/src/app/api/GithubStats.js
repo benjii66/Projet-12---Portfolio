@@ -1,12 +1,9 @@
 import { Octokit } from "@octokit/rest";
 
-
 export async function getGitHubStats(username) {
   const octokit = new Octokit({
     auth: process.env.NEXT_PUBLIC_GITHUB_AUTH_TOKEN,
   });
-
-
 
   try {
     const response = await octokit.rest.users.getByUsername({
