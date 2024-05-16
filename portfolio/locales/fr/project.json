@@ -8,6 +8,8 @@
     "project3Description": "Une application mobile first d'un groupe de restaurants, avec des détails sur les animations et les transitions, introduction au SASS.",
     "project4Title" : "Application d'apprentissage de langage",
     "project4Description": "Utilisation de Next.JS, l'ORM Drizzle, PostgreSQL, Server Actions, Stripe, ShadcnUI, TailwindCSS, première création d'un tableau de bord admin(React-Admin).",
+    "project5Title" : "Video Reveal Animation",
+    "project5Description": "Fan de Tekken j'ai voulu faire une animation pour révéler la bande-annonce. Utilisation de Next.JS, GSAP,TailwindCSS.",
     "projectTag1": "Tous",
     "projectTag2": "Ecole",
     "projectTag3": "Autre"

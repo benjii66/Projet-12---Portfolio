@@ -1,12 +1,16 @@
 import useTranslation from "next-translate/useTranslation";
 
 export const useCertifications = () => {
-const { t } = useTranslation("certification");
+  const { t } = useTranslation("certification");
 
-const Certifications = [
+  const Certifications = [
+    {
+      name: t("certification0Title"),
+      link: "certifications/Diplome_Integrateur_Web.pdf",
+    },
     {
       name: t("certification1Title"),
-      link:"certifications/Creez_des_pages_web_dynamiques_avec_JavaScript.pdf",
+      link: "certifications/Creez_des_pages_web_dynamiques_avec_JavaScript.pdf",
     },
     {
       name: t("certification2Title"),
@@ -40,5 +44,5 @@ const Certifications = [
   return Certifications;
 
 };
-  
-  export default useCertifications;
+
+export default useCertifications;
