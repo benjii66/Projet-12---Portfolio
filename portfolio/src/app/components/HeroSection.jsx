@@ -59,7 +59,7 @@ const HeroSection = () => {
               {t("hireMe")}
             </Link>
             <Link
-              href="certifications/CV_Benjamin.pdf"
+              href="certifications/CV_Benjamin_AlternanceReact.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-900 to-blue-300 hover:bg-slate-800 text-white mt-3"
               target="_blank"
               aria-label={t("downloadCVAriaLabel")}
