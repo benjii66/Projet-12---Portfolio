@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 
-
+//oui
 
 
 const HeroSection = () => {
