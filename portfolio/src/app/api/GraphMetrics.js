@@ -1,5 +1,6 @@
 import { graphql } from "@octokit/graphql";
 
+//graph for fetching data from github -
 
 const graphqlWithAuth = graphql.defaults({
   headers: {
