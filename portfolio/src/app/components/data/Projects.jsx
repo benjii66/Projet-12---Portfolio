@@ -13,7 +13,7 @@ const useProjectsData = () => {
       tag: ["All", "School"],
       gitUrl: "https://github.com/benjii66/P9-Nina",
       previewUrl: "https://benjii66.github.io/P9-Nina/",
-      technologies: [{src: "/images/technologies/js.webp", name:"JavaScript"}, {src:"/images/technologies/html.webp", name:"HTML"}, {src:"/images/technologies/css.webp" ,name:"CSS"}],
+      technologies: [{ src: "/images/technologies/js.webp", name: "JavaScript" }, { src: "/images/technologies/html.webp", name: "HTML" }, { src: "/images/technologies/css.webp", name: "CSS" }],
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const useProjectsData = () => {
       tag: ["All", "School"],
       gitUrl: "https://github.com/benjii66/Kasa",
       previewUrl: "https://kasa-silk.vercel.app/",
-      technologies: [{src: "/images/technologies/React.webp", name:"React"}, {src:"/images/technologies/html.webp", name:"HTML"}, {src:"/images/technologies/css.webp" ,name:"CSS"}],
+      technologies: [{ src: "/images/technologies/React.webp", name: "React" }, { src: "/images/technologies/html.webp", name: "HTML" }, { src: "/images/technologies/css.webp", name: "CSS" }],
 
     },
     {
@@ -34,7 +34,7 @@ const useProjectsData = () => {
       tag: ["All", "School"],
       gitUrl: "https://github.com/benjii66/Projet4-OhMyFood",
       previewUrl: "https://benjii66.github.io/Projet4-OhMyFood/index.html",
-      technologies: [{src:"/images/technologies/html.webp", name:"HTML"}, {src:"/images/technologies/sass.webp" ,name:"SASS"}],
+      technologies: [{ src: "/images/technologies/html.webp", name: "HTML" }, { src: "/images/technologies/sass.webp", name: "SASS" }],
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ const useProjectsData = () => {
       tag: ["All", "Personal"],
       gitUrl: "https://github.com/benjii66/lingo",
       previewUrl: "https://benjolingo.vercel.app",
-      technologies: [{src:"/images/technologies/Next.webp", name:"Next"}, {src:"/images/technologies/drizzle.webp" ,name:"Drizzle"}, {src:"/images/technologies/Typescript.webp" ,name:"Typescript"}],
+      technologies: [{ src: "/images/technologies/Next.webp", name: "Next" }, { src: "/images/technologies/drizzle.webp", name: "Drizzle" }, { src: "/images/technologies/Typescript.webp", name: "Typescript" }],
     },
     {
       id: 4,
@@ -54,20 +54,31 @@ const useProjectsData = () => {
       tag: ["All", "Personal"],
       gitUrl: "https://github.com/benjii66/reveal-animation",
       previewUrl: "https://video-reveal-animation.vercel.app/",
-      technologies: [{src:"/images/technologies/Next.webp", name:"Next"}, {src:"/images/technologies/react-gsap.webp" ,name:"GSAP"}, {src:"/images/technologies/Typescript.webp" ,name:"Typescript"}],
+      technologies: [{ src: "/images/technologies/Next.webp", name: "Next" }, { src: "/images/technologies/react-gsap.webp", name: "GSAP" }, { src: "/images/technologies/Typescript.webp", name: "Typescript" }],
     },
     {
       id: 5,
       title: t("project6Title"),
       description: t("project6Description"),
-      image: "/images/projects/Tabac.jpg", // Mets à jour avec le chemin de ton image
-      alt: "Tabac Le Soler Website",  
+      image: "/images/projects/Tabac.jpg",
+      alt: "Tabac Le Soler Website",
       tag: ["All", "Personal"],
       gitUrl: "https://github.com/benjii66/Tabac",
       previewUrl: "https://tabac-lesoler.vercel.app/",
-      technologies: [{ src: "/images/technologies/Next.webp", name: "Next" },{ src: "/images/technologies/Typescript.webp", name: "Typescript" },{ src: "/images/technologies/react-gsap.webp", name: "GSAP" }],
+      technologies: [{ src: "/images/technologies/Next.webp", name: "Next" }, { src: "/images/technologies/Typescript.webp", name: "Typescript" }, { src: "/images/technologies/react-gsap.webp", name: "GSAP" }],
     },
-    
+    {
+      id: 6,
+      title: t("project7Title"),
+      description: t("project7Description"),
+      image: "/images/projects/usap.jpg",
+      alt: "USAP Blog Website",
+      tag: ["All", "Personal"],
+      gitUrl: null,
+      previewUrl: "https://usapblog.great-site.net/",
+      technologies: [{ src: "/images/technologies/wordpress.webp", name: "WordPress" },{ src: "/images/technologies/js.webp", name: "JavaScript" }],
+    },
+
   ];
   return projectsData;
 };

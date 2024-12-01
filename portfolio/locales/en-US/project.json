@@ -12,7 +12,10 @@
     "project5Description": "Fan of the Tekken franchise I wanted to do a reveal animation of the trailer. Utilization of Next.JS, GSAP,TailwindCSS.",
     "project6Title": "Tabac Le Soler",
     "project6Description": "A website for a tobacco and press shop in Le Soler, featuring accessibility features, map integration, and responsive design. Built with Next.js, TypeScript, and a bit of GSAP.",
+    "project7Title": "USAP Blog",
+    "project7Description": "First time on WordPress.This is a blog for the USAP rugby team, showcasing news, match results, and historical highlights. Includes Twitter integration and responsive design.",
     "projectTag1": "All",
     "projectTag2": "School",
-    "projectTag3": "Personal"
+    "projectTag3": "Personal",
+    "projectTag4": "WordPress"
 }
