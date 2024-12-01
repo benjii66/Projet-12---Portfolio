@@ -10,6 +10,10 @@
     "project4Description": "Utilisation de Next.JS, l'ORM Drizzle, PostgreSQL, Server Actions, Stripe, ShadcnUI, TailwindCSS, première création d'un tableau de bord admin(React-Admin).",
     "project5Title" : "Video Reveal Animation",
     "project5Description": "Fan de Tekken j'ai voulu faire une animation pour révéler la bande-annonce. Utilisation de Next.JS, GSAP,TailwindCSS.",
+    "project6Title": "Tabac Le Soler",
+    "project6Description": "Site d'un bureau de Tabac à Le Soler, quelques features d'accessibilité, intégration de carte, Et Design responsive. Utilisation de Next.js, TypeScript, et un peu de GSAP.",
+    "project7Title": "USAP Blog",
+    "project7Description": "Première fois sur Wordpress.C'est un blog sur l'équipe de rugby l'USAP, affichage de news, calendrier de matchs, faits historiques. Intégration des derniers tweets officiels et design responsive.",
     "projectTag1": "Tous",
     "projectTag2": "Ecole",
     "projectTag3": "Autre"
