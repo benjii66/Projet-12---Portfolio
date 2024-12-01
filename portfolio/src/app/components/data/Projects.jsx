@@ -56,6 +56,18 @@ const useProjectsData = () => {
       previewUrl: "https://video-reveal-animation.vercel.app/",
       technologies: [{src:"/images/technologies/Next.webp", name:"Next"}, {src:"/images/technologies/react-gsap.webp" ,name:"GSAP"}, {src:"/images/technologies/Typescript.webp" ,name:"Typescript"}],
     },
+    {
+      id: 5,
+      title: t("project6Title"),
+      description: t("project6Description"),
+      image: "/images/projects/Tabac.jpg", // Mets à jour avec le chemin de ton image
+      alt: "Tabac Le Soler Website",  
+      tag: ["All", "Personal"],
+      gitUrl: "https://github.com/benjii66/Tabac",
+      previewUrl: "https://tabac-lesoler.vercel.app/",
+      technologies: [{ src: "/images/technologies/Next.webp", name: "Next" },{ src: "/images/technologies/Typescript.webp", name: "Typescript" },{ src: "/images/technologies/gsap.webp", name: "GSAP" }],
+    },
+    
   ];
   return projectsData;
 };
