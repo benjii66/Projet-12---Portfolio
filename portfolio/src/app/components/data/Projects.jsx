@@ -65,7 +65,7 @@ const useProjectsData = () => {
       tag: ["All", "Personal"],
       gitUrl: "https://github.com/benjii66/Tabac",
       previewUrl: "https://tabac-lesoler.vercel.app/",
-      technologies: [{ src: "/images/technologies/Next.webp", name: "Next" },{ src: "/images/technologies/Typescript.webp", name: "Typescript" },{ src: "/images/technologies/gsap.webp", name: "GSAP" }],
+      technologies: [{ src: "/images/technologies/Next.webp", name: "Next" },{ src: "/images/technologies/Typescript.webp", name: "Typescript" },{ src: "/images/technologies/react-gsap.webp", name: "GSAP" }],
     },
     
   ];
