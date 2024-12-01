@@ -1,3 +1,5 @@
+"use client"; 
+
 import useTranslation from "next-translate/useTranslation";
 
 const useProjectsData = () => {
@@ -74,7 +76,7 @@ const useProjectsData = () => {
       image: "/images/projects/usap.jpg",
       alt: "USAP Blog Website",
       tag: ["All", "Personal"],
-      gitUrl: null,
+      gitUrl: "https://usapblog.great-site.net/",
       previewUrl: "https://usapblog.great-site.net/",
       technologies: [{ src: "/images/technologies/wordpress.webp", name: "WordPress" },{ src: "/images/technologies/js.webp", name: "JavaScript" }],
     },
